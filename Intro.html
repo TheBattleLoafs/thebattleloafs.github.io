@@ -1,8 +1,5 @@
 <html>
-
 <canvas id="ctx" width="500" height="500" style="border:1px solid #000000;"></canvas>
-
-<button onclick="play()">Play Audio</button>
 </html>
 
 <script>
@@ -71,6 +68,8 @@ function update(){
     updatePlayer();
     ctx.fillText(player.name,player.x,player.y)
 }
+
+audio.play();
 setInterval(update,40)
 setInterval(play,17000)
 </script>
